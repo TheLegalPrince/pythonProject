@@ -1,6 +1,25 @@
-x=int(input("Enter the number: "))
-v=str(x) == str(x)[::-1]
-if(v==True):
-    print("This is a palindrome number")
-else:
-    print("This is not a palindrome number")
+import math
+a=math.sqrt(100)
+print(a)
+b=math.pow(2,4)
+print(b)
+c=math.factorial(5)
+print(c)
+d=math.gcd(20,10)
+print(d)
+e=math.log(10,2)
+print(e)
+f=math.log2(10)
+print(f)
+g=math.pi
+print(g)
+h=math.tau
+print(h)
+i=math.radians(90)
+print(i)
+j=math.degrees(90)
+print(j)
+k=math.dist(4,5)
+print(k)
+l=math.hypot(5,4)
+print(l)
