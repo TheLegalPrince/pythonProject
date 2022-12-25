@@ -2,12 +2,11 @@ import random
 l=['ROCK','PAPER','SCISSORS']
 countp=0
 countc=0
-c = int(input('How many games do you want to play: '))
 print("1.ROCK\n2.PAPER\n3.SCISSORS")
 n=input("Enter you choice: ").upper()
 e=random.choice(l)
 print("Computer's choice: ",e)
-for i in range(c):
+while True:
     if(e==n):
         print("DRAW")
     elif(e=='ROCK')and(n=="PAPER"):
@@ -22,6 +21,7 @@ for i in range(c):
     else:
         countp = countp+1
         print("You WIN!!")
+    break
 print('Times computer won:- ',countc)
 print('Times you won:- ',countp)
 if(countc==countp):
