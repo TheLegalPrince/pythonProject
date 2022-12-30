@@ -13,6 +13,6 @@ for i in s:
     else:
         k=k+i
 '''
-n=str(input("Enter the 1st string: "))
-j=str(input("Enter the 2nd String: "))
-print("The final string after splitting is: ",n.split(), j.split())
+str=input("Enter the string: ")
+str.split(' ')
+print(','.join(str))
