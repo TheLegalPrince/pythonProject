@@ -1,5 +1,5 @@
-x=int(input("Enter the number: "))
-v=str(x) == str(x)[::-1]
+x=input("Enter the number: ")
+v=x==x[::-1]
 if(v==True):
     print("This is a palindrome number")
 else:

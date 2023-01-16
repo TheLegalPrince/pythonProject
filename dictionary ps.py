@@ -36,22 +36,22 @@ for i in range(1,n+1):
     d[i]=b
 print(d)
 '''
-''''
+'''
 #alphabet lowercase=key & uppercase=value
 d = {}
-for i in string.ascii_lowercase:
-    for j in string.ascii_uppercase:
-        if (i.upper()==j):
+for i in string.ascii_uppercase:
+    for j in string.ascii_lowercase:
+        if (i.lower()==j):
             d[i]=j
         else:
             continue
 print(d)
 '''
-
 #string with no. occurrence
 s=input("Enter a string: ")
-l=[s]
 d={}
-for i in range(len(s)):
-    d[i]=s[i]
-print(d)
+for i in s:
+    d[i]=i
+    l=s.count(i)
+    d[i]=l
+print("Element occurrences - ",d)
