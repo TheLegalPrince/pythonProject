@@ -1,8 +1,6 @@
-hello
-Prince Srivastava
-gla
-nnn
-This is the longest line in this file
-hello
-gla
-it is
+ENGLAND AUSTRALIA INDIA
+(dollar/litre) (dollar/litre) (dollar/litre)
+6.62 4.2 9.6
+3.8 3.6 2.5
+8.6 6.1 4.2
+4.2 12.2 8.2

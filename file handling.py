@@ -17,11 +17,10 @@ with open('a.txt', "w+") as f:
             continue
 '''
 '''
-#to print 5 rando numbers between a given bound
+#to print 5 random numbers between a given bound
 import random
 with open('a.txt', "w+") as f:
-    for i in range(5):
-        f.write(str(int(random.uniform(50,61))) + ' ')
+    f.write(str(int(random.randint(50,61))) + ' ')
 '''
 #to calculate the percentage of vowels and consonants in a file
 '''
@@ -54,6 +53,7 @@ with open('a.txt', "r+") as f:
             continue
 print("The occurence of the character is - ",count)
 '''
+'''
 # to print the longest line in the file
 with open('a.txt', "r+") as f:
     l=f.readlines()
@@ -61,3 +61,18 @@ with open('a.txt', "r+") as f:
     l.sort()
     print(l)
 print("The longest line in the file is - ",l[0])
+'''
+s1=s2=s3=0
+with open("a.txt",'r') as f:
+    l=f.readlines()
+    for i in l[2:]:
+        a,b,c=i.split()
+        s1=s1+float(a)
+        s2=s2+float(b)
+        s3=s3+float(c)
+        avg1=s1/4
+        avg2=s2/4
+        avg3=s3/4
+print("England average = ",avg1)
+print("Australia average = ",avg2)
+print("India average = ",avg2)
