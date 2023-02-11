@@ -90,7 +90,7 @@ for i in range(n):
         else:
             print(' ', end='')
     print()'''
-
+'''
 # inverted hollow triangle
 n = int(input("Enter rows: "))
 for a in range(1, n + 1):
@@ -101,3 +101,9 @@ for a in range(1, n + 1):
     for c in range(a, 0, -1):
         print("*", end='')
     print()
+'''
+print("    *")
+print('   * *')
+print('  *   *')
+print(' *     *')
+print('* * * * *')

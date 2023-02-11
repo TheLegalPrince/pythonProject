@@ -62,6 +62,7 @@ with open('a.txt', "r+") as f:
     print(l)
 print("The longest line in the file is - ",l[0])
 '''
+'''
 s1=s2=s3=0
 with open("a.txt",'r') as f:
     l=f.readlines()
@@ -76,3 +77,31 @@ with open("a.txt",'r') as f:
 print("England average = ",avg1)
 print("Australia average = ",avg2)
 print("India average = ",avg2)
+'''
+'''
+#program to count space, newline and tab
+s=t=n=0
+with open ("a.txt",'r')as f:
+    l=f.read()
+    print(l)
+    for i in l:
+        if(i==' '):
+            s=s+1
+        elif(i=='\t'):
+            t=t+1
+        elif(i=='\n'):
+            n=n+1
+print("Number of spaces: ",s)
+print("Number of tabs: ",t)
+print("Number of newline: ",n)
+'''
+n=0
+with open('a.txt','r') as f:
+    l=f.read()
+    c=len(l)
+    print("No. of characters are: ",c)
+    for i in l:
+        if(i=='\n'):
+            n=n+1
+    print('No. of lines: ',n+1)
+    print('No. of words:',len(l.split()))
